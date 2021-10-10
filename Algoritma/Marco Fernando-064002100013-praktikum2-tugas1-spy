@@ -1,0 +1,33 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Oct 10 11:03:07 2021
+
+@author: mf034
+Nama: Marco Fernando
+Nim : 064002100013
+"""
+
+import math
+a = float(input("Masukkan nilai a "))
+b = float(input("Masukkan nilai b "))
+
+jumlah = a+b
+print("Jumlah a ditambah b adalah", jumlah)
+
+selisih = abs(a-b)
+print("Selisih a dengan b adalah", selisih)
+
+kali = a*b
+print("Hasil kali a dengan b adalah", kali)
+
+sisa_bagi = a%b
+print("Sisa pembagian a dengan b adalah", sisa_bagi)
+
+bagi = a/b
+print("Hasil pembagian a dengan b adalah", bagi)
+
+log = math.log10(a)
+print("Hasil dari log(a) adalah", log)
+
+pangkat = a**b
+print("Hasil dari a pangkat b adalah", pangkat)
