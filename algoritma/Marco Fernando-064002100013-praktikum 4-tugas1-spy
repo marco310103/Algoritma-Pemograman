@@ -1,0 +1,21 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Oct 11 13:33:26 2021
+
+@author: mf034
+
+
+
+"""
+
+print("MARCO FERNANDO")
+
+a = int(input("ketik angka : "))
+
+while a > 0:
+    for i in range(a):
+        print(a , end="")
+    print()
+    
+    a -=1
+        
