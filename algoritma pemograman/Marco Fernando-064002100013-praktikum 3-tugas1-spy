@@ -1,0 +1,32 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Oct 22 11:17:08 2021
+
+@author: mf034
+Nama : Marco Fernando
+Nim  : 064002100013
+
+
+"""
+
+repeat = "y"
+while repeat == "y" or repeat == "Y" :
+    x = int(input("sisi A :"))
+    y = int(input("sisi B :"))
+    z = int(input("sisi C :"))
+    if x+y <= z or x+z <= y or z+y <= x:
+        print("bukan merupakan segitiga")
+        repeat = input("mencari segitiga lagi?")
+    elif x == y == z :
+        print("merupakan segitiga sama sisi")
+        repeat = input("mencari segitiga lagi?")
+    elif x == y or y == z or z == x :    
+        print("merupakan segitiga sama kaki")
+        repeat = input("mencari segitiga lagi?")
+    elif x*x + y*y == z*z or x*x + z*z == y*y or y*y + z*z ==x*x :
+        print("merupakan segitiga siku siku")
+        repeat = input("mencari segitiga lagi?")
+    else :
+        print("merupakan segitiga sembarang")
+        repeat = input("mencari segitiga lagi?")
+print("terima kasih telah belajar bersama kami semua")        
