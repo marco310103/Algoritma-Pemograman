@@ -1,0 +1,16 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Dec 14 17:35:20 2021
+
+@author: mf034
+Nama : Marco Fernando
+Nim  : 064002100013
+"""
+
+def fibonacci (n):
+  if n < 1:
+    return [n]
+
+  return fibonacci(n - 1) + [n]
+
+print(fibonacci(5))
