@@ -1,0 +1,48 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Dec 30 12:29:51 2021
+
+@author: mf034
+"""
+
+def search(ip_arr, x):
+
+    l = 0
+
+    h = len(ip_arr) - 1
+
+    mid = 0
+
+    while l <= h:
+
+        mid = (h + l) // 2
+
+        if ip_arr[mid] < x:
+
+            l = mid + 1
+
+        elif ip_arr[mid] > x:
+
+            h = mid - 1
+
+        else:
+
+            return mid
+
+    return -1
+
+   
+
+ip_arr = [101, 4, 98, 7]
+
+x = 98
+
+output = search(ip_arr, x)
+
+if output != -1:
+
+    print("The element is present at index", str(output))
+
+else:
+
+    print("The element is not present in the given array!")
